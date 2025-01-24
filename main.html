@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .gray-line{
+      display:flex;
+      background-color: gray;
+      flex-wrap: nowrap;
+      justify-content:center;
+      padding: 5px;
+    }
+    .white-block{
+      display:inline-flex;
+      width:70%;
+      background-color: white;
+    }
+    .menus{
+      display:flex;
+      flex-direction: column;
+      align-items:center;
+      background-image: url('houses.jpg');
+    }
+    .menus-list{
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      justify-content: center;
+      align-items: center;
+      width:100%;
+    }
+    .menus-list li {
+      padding: 20px 20px;
+      border-radius: 5px;
+      font-size: 30px;
+      text-align: center;
+      cursor: pointer;
+      font-weight:bold;
+    }
+    .menus-list li:hover {
+      background-color: rgba(207, 200, 200, 0.8); 
+    }
+    .menus-name{
+      margin:10px;
+      padding:5px;
+      font-size:30px;
+    }
+
+    .main-information-block{
+      display:flex;
+      flex-direction: column;
+      flex-wrap:wrap;
+      border: thin gray solid;
+    }
+    .main-information-block-first{
+      display:flex;
+      flex-direction: row;
+      flex-wrap:nowrap;
+      justify-content: space-evenly;
+    }
+    .main-information-block-first-one{
+      width:60%;
+      margin:5px;
+      padding:5px;
+    }
+    .main-information-block-first-one-pic{
+      width:100%;
+      height:200px;
+    }
+    .main-information-block-first-one-text{
+      width:100%;
+    }
+    .main-information-block-first-one-text h2{
+      text-align: center;
+    }
+    .main-information-block-first-two{
+      width: 30%;
+      margin:5px;
+      padding:5px;
+    }
+    .main-information-block-first-two-text{
+      width:100%;
+    }
+    .main-information-block-first-two-text h2{
+      text-align: center;
+    }
+    .main-information-block-first-two-pic{
+      width:100%;
+      height:200px;
+    }
+
+    .main-information-block-second{
+      display:flex;
+      flex-direction: row;
+      flex-wrap:wrap;
+      justify-content:space-around;
+      gap:10px;
+      margin:5px;
+    }
+    .main-information-block-second-item {
+       width: 28%;
+       border: solid gray thin;
+       padding:5px;
+       display:flex;
+       flex-wrap:wrap;
+    }
+    .main-information-block-second-item-top{
+      width:100%;
+      display:inline-flex;
+      align-items: center;
+    }
+    .main-information-block-second-item-top img{
+      width:50%;
+      height: 200px;
+    }
+    footer{
+      display:flex;
+      flex-direction:row;
+      justify-content: space-between;
+      border:gray thin solid;
+      padding:5px;
+    }
+    @media (max-width:800px)
+    {
+      .menus{
+        background-image: none;
+      }
+      .menus-name{
+        display:none;
+      }
+      .menus-list {
+        flex-wrap: wrap; 
+      }
+      .menus-list li {
+        width: 50%; 
+        box-sizing: border-box; 
+      }
+      .main-information-block-first{
+        flex-wrap: wrap;
+      }
+      .main-information-block-first-one{
+        width:100%;
+      }
+      .main-information-block-first-two{
+        width: 100%;
+      }
+      .main-information-block-second-item{
+        width:100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="gray-line">
+    <div class="white-block"></div>🔍
+  </div>
+  <div class="menus">
+    <ul class="menus-list">
+      <li><a href="main.html">Меню 1</a></li>
+      <li>Меню 2</li>
+      <li>Меню 3</li>
+      <li>Меню 4</li>
+    </ul>
+    <div class="menus-name">
+      Едьте в будущее с Mercedes-Bens
+    </div>
+  </div>
+  <div class="main-information-block">
+
+    <div class="main-information-block-first">
+
+      <div class="main-information-block-first-one">
+        <img class="main-information-block-first-one-pic" src="car1.jpg">
+        <div class="main-information-block-first-one-text">
+          <h2>
+            Mercedes AMG 206
+          </h2>
+          <p>
+            Новый Mercedes AMG 206 — это сочетание роскоши, мощности и передовых технологий. С двигателем мощностью 421 л.с. и интеллектуальными системами помощи водителю вы получите максимум удовольствия от каждой поездки.
+          </p>
+        </div>
+      </div>
+  
+      <div class="main-information-block-first-two">
+        <img class="main-information-block-first-two-pic" src="car2.jpg">
+        <div class="main-information-block-first-two-text">
+          <h2>
+            Audi Horch
+          </h2>
+          <p>
+            Audi Horch — легендарное сочетание классического дизайна и современных технологий. Этот автомобиль создан для тех, кто ценит комфорт, престиж и непревзойденное качество. С мощным двигателем, премиальной отделкой салона и новейшими системами безопасности Audi Horch станет вашим идеальным спутником на дороге.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-information-block-second">
+      
+      <div class="main-information-block-second">
+        <div class="main-information-block-second-item">
+          <div class="main-information-block-second-item-top">
+            <img src="car3.jpg">
+            <h2>BMW z4</h2>
+          </div>
+          <p>Эта модель объединяет в себе элегантность и спортивный стиль. BMW Z4 идеально подходит для тех, кто любит ощущение свободы на дороге.</p>
+        </div>
+
+        <div class="main-information-block-second-item">
+          <div class="main-information-block-second-item-top">
+            <img src="car4.jpg">
+            <h2>BMW 3er</h2>
+          </div>
+          <p>BMW 3er — это сочетание динамики и инноваций, идеально подходящее как для городской жизни, так и для путешествий.</p>
+        </div>
+  
+        <div class="main-information-block-second-item">
+          <div class="main-information-block-second-item-top">
+            <img src="car5.jpg">
+            <h2>Stoewer R200</h2>
+          </div>
+          <p>Историческая модель с богатой историей, Stoewer R200 сочетает в себе классику дизайна и редкую аутентичность.</p>
+        </div>
+  
+        <div class="main-information-block-second-item">
+          <div class="main-information-block-second-item-top">
+            <img src="car3.jpg">
+            <h2>Mercedes CLA</h2>
+          </div>
+          <p>Mercedes CLA — это элегантность купе и практичность седана. Он сочетает стильный внешний вид с выдающимися характеристиками.</p>
+        </div>
+  
+        <div class="main-information-block-second-item">
+          <div class="main-information-block-second-item-top">
+            <img src="car4.jpg">
+            <h2>Audi Q5</h2>
+          </div>
+          <p>Audi Q5 — это кроссовер премиум-класса, который объединяет мощность, комфорт и передовые технологии для повседневной жизни.</p>
+        </div>
+  
+        <div class="main-information-block-second-item">
+          <div class="main-information-block-second-item-top">
+            <img src="car5.jpg">
+            <h2>Porsche Taycan</h2>
+          </div>
+          <p>Porsche Taycan — электрический автомобиль с непревзойденной динамикой и фирменной спортивной управляемостью Porsche.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div>
+      Данила Алексеевич, Б9122-09.03.04
+    </div>
+    <div>
+      Контакты
+    </div>
+  </footer>
+</body>
